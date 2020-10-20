@@ -3,8 +3,7 @@ const app = express();
 
 
 app.use('/weather/data', async (req, res) => {
-console.log(req.params.toString());
-    console.log(req.body.toString());
+console.log(req.query);
 res.json({status:202});
 });
 
